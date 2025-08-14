@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C360DD92E4E178100ECCCCF /* FridgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C360DD72E4E178100ECCCCF /* FridgeApp.swift */; };
 		2C360DE62E4E477800ECCCCF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2C360DE52E4E476D00ECCCCF /* .gitignore */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C360DD72E4E178100ECCCCF /* FridgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeApp.swift; sourceTree = "<group>"; };
 		2C360DE42E4E46AF00ECCCCF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2C360DE52E4E476D00ECCCCF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		2CF729422E4D08D300747833 /* Fridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,9 +38,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		2CF729442E4D08D300747833 /* Fridge */ = {
+		2C360DE82E4E489F00ECCCCF /* Features */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Fridge;
+			path = Features;
+			sourceTree = "<group>";
+		};
+		2C360DEB2E4E491500ECCCCF /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		2CF729542E4D08D500747833 /* FridgeTests */ = {
@@ -81,12 +88,14 @@
 		2CF729392E4D08D300747833 = {
 			isa = PBXGroup;
 			children = (
+				2C360DEB2E4E491500ECCCCF /* Resources */,
+				2C360DE82E4E489F00ECCCCF /* Features */,
 				2C360DE52E4E476D00ECCCCF /* .gitignore */,
 				2C360DE42E4E46AF00ECCCCF /* README.md */,
-				2CF729442E4D08D300747833 /* Fridge */,
 				2CF729542E4D08D500747833 /* FridgeTests */,
 				2CF7295E2E4D08D500747833 /* FridgeUITests */,
 				2CF729432E4D08D300747833 /* Products */,
+				2C360DD72E4E178100ECCCCF /* FridgeApp.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,7 +125,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				2CF729442E4D08D300747833 /* Fridge */,
+				2C360DE82E4E489F00ECCCCF /* Features */,
+				2C360DEB2E4E491500ECCCCF /* Resources */,
 			);
 			name = Fridge;
 			packageProductDependencies = (
@@ -245,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C360DD92E4E178100ECCCCF /* FridgeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

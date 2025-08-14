@@ -12,7 +12,7 @@ import SwiftUI
 struct FridgeApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self
+            Product.self
         ])
         let modelConfiguration = ModelConfiguration(
             schema: schema,
@@ -32,7 +32,7 @@ struct FridgeApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeScreen()
         }
         .modelContainer(sharedModelContainer)
     }
